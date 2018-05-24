@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>升级浏览器</title>
+    <script>
+        if (navigator.userAgent.match(/chrome|safari/i)) {
+            var url =location['origin']+location['search'].split("?url=")[1];
+            window.location = url;
+        }
+    </script>
+    <style>
+        body{background: rgba(33,33,33,0.1);}
+        .main{box-shadow: 3px 3px 3px #dbdbdb;width: 600px;padding: 30px;margin: 0px auto;border: 1px solid #dbdbdb;border-radius: 15px;margin-top: 10%;background: #fff;}
+        h3,p{text-align: center;}
+        .kwicks {list-style: none;position: relative;margin: 0 auto;padding: 0;}
+        .kwicks.horizontal li {margin-right: 5px;float: left;}
+        .kwicks.vertical  li{margin-bottom: 5px;}
+        .kwicks li{float: left;width: 125px;height: 100px;margin-right: 5px;}
+        .kwicks li span{clear: both;display: block;text-align: center;font-size: 16px;color: #fff;line-height: 35px;width: 125px;height: 35px;}
+        .kwicks li img{float: left;margin-left: 30px;margin-top: 5px;}
+        .kwicks li a{width: 70px;height: 30px;border: 1px solid #fff;display: block;position: absolute;left: 125px;text-align: center;line-height: 30px;color: #fff;border-radius: 5px;font-size: 12px;cursor: pointer;text-decoration: none;}
+        #kwick1 { background-color: rgb(235,86,73);}
+        #kwick2 {background-color: rgb(77,184,73);}
+        #kwick3 {background-color: rgb(247,159,61);}
+        #kwick4 { background-color: rgb(1,144,232);margin-right: none;}
+        .kwicks.horizontal #kwick_4 {margin-right: none;}
+        .kwicks.vertical #kwick_4 {margin-bottom: none;}
+    </style>
+</head>
+<body>
+<div class="main">
+    <h3 class="h3ie">尊敬的用户，您当前使用的浏览器不支持最新的HTML5技术。</h3>
+    <p class="p1">为了保证您正常使用，建议您从以下Webkit内核浏览器中选择一款。</p>
+    <ul class="kwicks horizontal" >
+        <li id="kwick1">
+            <img src="http://s0.kuaizhan.com/res/homepage/images/browser-360.png?v=4.5" alt="">
+            <span>360极速版</span>
+            <a style="top: 10px;" href="http://chrome.360.cn/">进入官网</a>
+            <a style="top: 50px;" href="http://down.360safe.com/cse/360cse_8.1.0.430.exe">立即下载</a>
+        </li>
+        <li id="kwick2">
+            <img src="http://s0.kuaizhan.com/res/homepage/images/browser-chrome.png?v=4.5" alt="">
+            <span>Chrome</span>
+            <a style="top: 10px;" href="http://www.google.cn/intl/zh-CN/chrome/">进入官网</a>
+            <a style="top: 50px;" href="http://www.google.cn/intl/zh-CN/chrome/">立即下载</a>
+        </li>
+        <li id="kwick3">
+            <img src="http://s0.kuaizhan.com/res/homepage/images/browser-liebao.png?v=4.5" alt="">
+            <span>猎豹</span>
+            <a style="top: 10px;" href="http://www.liebao.cn/">进入官网</a>
+            <a style="top: 50px;" href="http://dl.liebao.cn/kb/KSbrowser_5.2.91.9718_r2.exe">立即下载</a>
+        </li>
+        <li id="kwick4">
+            <img src="http://s0.kuaizhan.com/res/homepage/images/browser-maxthon.png?v=4.5" alt="">
+            <span>傲游</span>
+            <a style="top: 10px;" href="http://www.maxthon.cn/">进入官网</a>
+            <a style="top: 50px;" href="http://dl.maxthon.cn/mx4/mx4.4.4.3000cn.exe">立即下载</a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
